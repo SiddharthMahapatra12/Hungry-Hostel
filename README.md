@@ -1,4 +1,6 @@
 # Hungry-Hostel
-Web Application. 
-Front end codebase here. 
-Backend and database is being worked upon.
+
+Web Application :-
+
+1) Front-end codebase. 
+2) Back-end and Database is a work in progress.
