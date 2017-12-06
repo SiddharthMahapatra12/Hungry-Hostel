@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+ <title>||Hungry Hostel||ORDER</title>
+ 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+  body,h1,h5{
+             font-family: "Raleway", sans-serif;
+            }
+  body, html{
+             height: 100%;
+             background-color:white;
+            }
+  div{ 
+       text-align:center;
+     }
+  table{
+         width:80%;
+       }
+  td{
+     padding:40px;
+    }
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+      float:right;
+  }
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+  }
+ button{
+      float:left;
+      width:400px;
+      height:60px;
+}
+
+</style>
+
+
+<body>
+
+ <ul>
+  <li><a href="Help.html">Help</a></li>
+  <li><a href="HomePage.html">Home</a></li>
+  <li>
+ <button onclick="document.getElementById('Customised Orders').style.display='block'" class="w3-button w3-black">
+      Particular dish you want?
+ </button></li>
+ </ul>  
+ </br></br></br></br></br>
+
+ <div>
+   <h1>Choose from what is cooking</h1>
+ </div>
+ </br></br>
+ 
+ <table>
+       <thead>
+          
+          <tr>
+            <td>Rice & Rajma Rs.100.00</br></br><img src="rajma.jpg" alt="rajma" style="width:900px;height:300px;"></br></br><button onclick="alert('Your order has been placed!')">ORDER</button></td>
+          </tr>
+          <tr>
+            <td>Omlette Rs.100.00</br></br><img src="omelette.jpg" alt="omlette" style="width:900px;height:300px;"></br></br><button onclick="alert('Your order has been placed!')">ORDER</button></td>
+          </tr>
+          <tr>
+            <td>Chicken Curry Rs.100.00</br></br><img src="chickencurry.jpg" alt="chickencurry" style="width:900px;height:300px;"></br></br><button onclick="alert('Your order has been placed!')">ORDER</button></td>
+          </tr>
+          <tr>
+            <td>Mushroom Masala Rs.100.00</br></br><img src="mushroom.jpg" alt="rajma" style="width:900px;height:300px;"></br></br><button onclick="alert('Your order has been placed!')">ORDER</button></td>
+          </tr>
+          <tr>
+            <td>Hakka Noodles Rs.100.00</br></br><img src="hakka.jpg" alt="hakka" style="width:900px;height:300px;"></br></br><button>ORDER</button onclick="alert('Your order has been placed!')"></td>
+          </tr>
+          
+      </thead>
+ </table>
+
+ 
+
+ <!--------------------------  Customised Order Form ---------------------------------------->
+
+ <div id="Customised Orders" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+   <div class="w3-container w3-black">
+     <span onclick="document.getElementById('Customised Orders').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">
+        x
+     </span>
+              <h1>What do you want ?</h1>
+  </div>
+
+  <div class="w3-container">
+  <form>
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name of the dish" required name="Name of the dish"></p>
+    <p><input class="w3-input w3-padding-16 w3-border" type="number"min="1" placeholder="For how many people" required name="People"></p>
+    <p><button class="w3-button" type="submit" onclick="alert('Your order has been added for our cooks to see!')">Submit</button></p>
+  </form>
+  </div>
+
+  </div>
+ </div>
+
+</body>
+
+</html>
+
+
